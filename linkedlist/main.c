@@ -9,12 +9,38 @@ struct Node
 	int data;
 	struct Node* next;
 };
+
+/****************************************************************/
+/* Description    :  This function insert element at the head   */
+/*					 Inputs :  data								*/
+/*					 return : void		 						*/
+/****************************************************************/
+void InsertAtBeginning(int x)
+{
+	//cast because malloc()return void ptr i want to be return ptr to struct
+	    /* 1. allocate node */
+	struct Node* Temp =(struct Node*) malloc( sizeof(struct Node) );
+	// 2.put in the data
+	Temp->Data=x;//==(*Temp).data=x;
+	 /* 3. Make next of new node as head */
+	Temp->Next=Head;
+	
+	    /* 4. move the head to point to the new node */
+	Head=Temp;
+}
+
+
  
 	//Given a reference (pointer to pointer) to the head of a list and  
    //an int, inserts a new node on the front of the list.
+/****************************************************************/
+/* Description    :  This function push element in linked list  */
+/*					 Inputs :  data , position					*/
+/*					 return : void		 						*/
+/****************************************************************/
 void push(int data , int position) 
 { 
-    // 1. allocate node 
+    // 1. allocate new node 
     struct Node* new_node = (struct Node*) malloc(sizeof(struct Node)); 
   
     // 2. put in the data  
@@ -22,7 +48,8 @@ void push(int data , int position)
   
     // 3. Make next of new node as NULL 
     new_node->next = NULL; 
-  
+	
+		//check if position is the first
 	if(position =1)
 	{
 		new_node->next=head;
@@ -31,6 +58,7 @@ void push(int data , int position)
 	}
 	struct Node* new_node2=head;
 		int i;
+		//for loop to Traverse the Linked list
 	for(i=0 ; i<position-2 ; i++)
 	{
 		new_node2 = new_node2->next;
@@ -39,7 +67,12 @@ void push(int data , int position)
 	new_node2->next = new_node;
 } 
 
-// This function prints contents of linked list starting from head 
+
+/***************************************************************************************/
+/* Description    :  This function prints contents of linked list starting from head   */
+/* Inputs 		  :	 void															   */
+/* return 		  :  void		 													   */
+/***************************************************************************************/
 void print(){
 	
 struct Node* temp = head ;
@@ -74,6 +107,33 @@ void Delete(int position)
 }
 
 
+
+/********************************************************************/
+/* Description    :  Function to reverse the linked list    		*/
+/* Inputs 		  :	 void											*/
+/* return 		  :  void		 									*/
+/********************************************************************/
+
+/*
+
+	Iterative Method
+
+	1-Initialize three pointers prev as NULL, curr as head and next as NULL.
+	2-Iterate trough the linked list. In loop, do following.
+	// Before changing next of current,
+	// store next node
+	next = curr->next
+	// Now change next of current
+	// This is where actual reversing happens
+	curr->next = prev
+
+	// Move prev and curr one step forward
+	prev = curr
+	curr = next
+	
+*/
+
+
 void Reverse()
 {
 	struct Node *prev=NULL;
@@ -85,7 +145,8 @@ void Reverse()
         next = current->next;
 		
         // Reverse current node's pointer 
-        current->next = prev; 		 
+        current->next = prev;
+		// Move pointers one position ahead.		
 		prev = current;
 		current = next;
 	 }
@@ -95,19 +156,21 @@ void Reverse()
 
 int main()
 {
+	//start at ferr node
+	head =NULL;
 
-head =NULL;
-push(1,2);
-push(2,1);
-push(3,4);
-push(5,5);
-push(6,6);
-push(7,5);
-print();
-Delete(3);
-print();
-Reverse();
-print();
+		//push the element
+	push(1,2);
+	push(2,1);
+	push(3,4);
+	push(5,5);
+	push(6,6);
+	push(7,5);
+	print();
+	Delete(3);
+	print();
+	Reverse();
+	print();
 
 	return 0;
 
