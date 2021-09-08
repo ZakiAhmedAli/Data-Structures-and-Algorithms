@@ -112,3 +112,61 @@ The insertion sort is used when:
 
 the array is has a small number of elements
 there are only a few elements left to be sorted
+
+3-Selection Sort Algorithm
+Working of Selection Sort
+![image](https://user-images.githubusercontent.com/55850221/132428842-1371505b-dbb4-4e51-87a6-c5b367f89a73.png)
+
+2-Compare minimum with the second element. If the second element is smaller than minimum, assign the second element as minimum.
+Compare minimum with the third element. Again, if the third element is smaller, then assign minimum to the third element otherwise do nothing. The process goes on until the last element.
+![image](https://user-images.githubusercontent.com/55850221/132428891-56a8b373-4234-4a59-9979-befbd54e3a1c.png)
+
+3-After each iteration, minimum is placed in the front of the unsorted list.
+![image](https://user-images.githubusercontent.com/55850221/132428939-c610e722-382c-4864-854d-82b18a091c62.png)
+
+4-For each iteration, indexing starts from the first unsorted element. Step 1 to 3 are repeated until all the elements are placed at their correct positions.
+![image](https://user-images.githubusercontent.com/55850221/132428980-52c8a95b-be3d-463b-ba01-4c8c04fd66d7.png)
+![image](https://user-images.githubusercontent.com/55850221/132429007-df076344-dde7-4137-9df9-cc5c0e2f241d.png)![image](https://user-images.githubusercontent.com/55850221/132429024-cf2d9b6e-5657-4e2c-9b29-99e3b5be7e84.png)
+![image](https://user-images.githubusercontent.com/55850221/132429039-19520487-b7ca-4024-b503-a2e9cc97f42a.png)
+
+Selection Sort Complexity
+Time Complexity	 
+Best	O(n2)
+Worst	O(n2)
+Average	O(n2)
+Space Complexity	O(1)
+Stability	No
+Cycle	Number of Comparison
+1st	(n-1)
+2nd	(n-2)
+3rd	(n-3)
+...	...
+last	1
+Number of comparisons: (n - 1) + (n - 2) + (n - 3) + ..... + 1 = n(n - 1) / 2 nearly equals to n2.
+
+Complexity = O(n2)
+
+Also, we can analyze the complexity by simply observing the number of loops. There are 2 loops so the complexity is n*n = n2.
+
+Time Complexities:
+
+Worst Case Complexity: O(n2)
+If we want to sort in ascending order and the array is in descending order then, the worst case occurs.
+Best Case Complexity: O(n2)
+It occurs when the array is already sorted
+Average Case Complexity: O(n2)
+It occurs when the elements of the array are in jumbled order (neither ascending nor descending).
+
+The time complexity of the selection sort is the same in all cases. At every step, you have to find the minimum element and put it in the right place. The minimum element is not known until the end of the array is not reached.
+
+Space Complexity:
+
+Space complexity is O(1) because an extra variable temp is used.
+
+Selection Sort Applications
+The selection sort is used when
+
+a small list is to be sorted
+cost of swapping does not matter
+checking of all the elements is compulsory
+cost of writing to a memory matters like in flash memory (number of writes/swaps is O(n) as compared to O(n2) of bubble sort)
