@@ -74,3 +74,41 @@ Now, the first two elements are sorted.
 Take the third element and compare it with the elements on the left of it. Placed it just behind the element smaller than it. If there is no element smaller than it, then place it at the beginning of the array.
 
 ![image](https://user-images.githubusercontent.com/55850221/132428399-48cbf947-711b-4525-a26a-4b0b7a1d801d.png)
+
+Similarly, place every unsorted element at its correct position.
+
+![image](https://user-images.githubusercontent.com/55850221/132428514-a08a9ed0-006a-4b02-9087-4206ab3a49c5.png)
+
+![image](https://user-images.githubusercontent.com/55850221/132428543-dd08c271-3d98-429b-8daa-a0ff95c51275.png)
+
+Insertion Sort Complexity
+
+Time      Complexity	 
+Best	    O(n)
+Worst	    O(n2)
+Average	  O(n2)
+
+Space Complexity	O(1)
+Stability	Yes
+
+Time Complexities
+
+Worst Case Complexity: O(n2)
+Suppose, an array is in ascending order, and you want to sort it in descending order. In this case, worst case complexity occurs.
+
+Each element has to be compared with each of the other elements so, for every nth element, (n-1) number of comparisons are made.
+
+Thus, the total number of comparisons = n*(n-1) ~ n2
+Best Case Complexity: O(n)
+When the array is already sorted, the outer loop runs for n number of times whereas the inner loop does not run at all. So, there are only n number of comparisons. Thus, complexity is linear.
+Average Case Complexity: O(n2)
+It occurs when the elements of an array are in jumbled order (neither ascending nor descending).
+Space Complexity
+
+Space complexity is O(1) because an extra variable key is used.
+
+Insertion Sort Applications
+The insertion sort is used when:
+
+the array is has a small number of elements
+there are only a few elements left to be sorted
