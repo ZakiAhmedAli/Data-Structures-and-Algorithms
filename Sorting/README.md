@@ -8,10 +8,24 @@ Suppose we are trying to sort the elements in ascending order.
 
 1. First Iteration (Compare and Swap)
 
-Starting from the first index, compare the first and the second elements.
-If the first element is greater than the second element, they are swapped.
-Now, compare the second and the third elements. Swap them if they are not in order.
-The above process goes on until the last element.
+1-Starting from the first index, compare the first and the second elements.
+2-If the first element is greater than the second element, they are swapped.
+3-Now, compare the second and the third elements. Swap them if they are not in order.
+4-The above process goes on until the last element.
+![image](https://user-images.githubusercontent.com/55850221/132429347-eb337929-78c3-4d78-bfc0-8c5eb45bd04e.png)
+
+2. Remaining Iteration
+The same process goes on for the remaining iterations.
+After each iteration, the largest element among the unsorted elements is placed at the end.
+![image](https://user-images.githubusercontent.com/55850221/132429384-4c8b9c44-407d-4574-a470-201252135ad1.png)
+
+In each iteration, the comparison takes place up to the last unsorted element.
+
+![image](https://user-images.githubusercontent.com/55850221/132429511-03c2cf49-ca37-4c8e-833d-afd0a3f6d298.png)
+
+The array is sorted when all the unsorted elements are placed at their correct positions.
+![image](https://user-images.githubusercontent.com/55850221/132429556-a5dd8f52-88ed-4e3b-99bb-03a1031db45b.png)
+
 
 Bubble Sort Complexity
 Time Complexity	 
