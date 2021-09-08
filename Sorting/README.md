@@ -1,4 +1,4 @@
-#1-Bubble sort:
+# 1-Bubble sort:
 Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are not in the intended order.
 
 Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort.
@@ -71,7 +71,7 @@ Bubble sort is used if
 complexity does not matter
 short and simple code is preferred
 
-2-Insertion sort:
+# 2-Insertion sort:
 
 Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each iteration.
 
@@ -127,7 +127,7 @@ The insertion sort is used when:
 the array is has a small number of elements
 there are only a few elements left to be sorted
 
-3-Selection Sort Algorithm
+# 3-Selection Sort Algorithm
 Working of Selection Sort
 ![image](https://user-images.githubusercontent.com/55850221/132428842-1371505b-dbb4-4e51-87a6-c5b367f89a73.png)
 
