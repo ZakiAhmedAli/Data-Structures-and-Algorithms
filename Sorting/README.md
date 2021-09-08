@@ -3,7 +3,7 @@ Bubble sort is a sorting algorithm that compares two adjacent elements and swaps
 
 Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort.
 
-Working of Bubble Sort
+### Working of Bubble Sort
 Suppose we are trying to sort the elements in ascending order.
 
 1. First Iteration (Compare and Swap)
@@ -27,7 +27,7 @@ The array is sorted when all the unsorted elements are placed at their correct p
 ![image](https://user-images.githubusercontent.com/55850221/132429556-a5dd8f52-88ed-4e3b-99bb-03a1031db45b.png)
 
 
-Bubble Sort Complexity
+### Bubble Sort Complexity
 Time Complexity	 
 Best	O(n)
 Worst	O(n2)
@@ -95,7 +95,7 @@ Similarly, place every unsorted element at its correct position.
 
 ![image](https://user-images.githubusercontent.com/55850221/132428543-dd08c271-3d98-429b-8daa-a0ff95c51275.png)
 
-Insertion Sort Complexity
+### Insertion Sort Complexity
 
 Time      Complexity	 
 Best	    O(n)
@@ -105,7 +105,7 @@ Average	  O(n2)
 Space Complexity	O(1)
 Stability	Yes
 
-Time Complexities
+### Time Complexities
 
 Worst Case Complexity: O(n2)
 Suppose, an array is in ascending order, and you want to sort it in descending order. In this case, worst case complexity occurs.
@@ -117,8 +117,8 @@ Best Case Complexity: O(n)
 When the array is already sorted, the outer loop runs for n number of times whereas the inner loop does not run at all. So, there are only n number of comparisons. Thus, complexity is linear.
 Average Case Complexity: O(n2)
 It occurs when the elements of an array are in jumbled order (neither ascending nor descending).
-Space Complexity
 
+### Space Complexity
 Space complexity is O(1) because an extra variable key is used.
 
 Insertion Sort Applications
@@ -128,7 +128,7 @@ the array is has a small number of elements
 there are only a few elements left to be sorted
 
 # 3-Selection Sort Algorithm
-Working of Selection Sort
+### Working of Selection Sort
 ![image](https://user-images.githubusercontent.com/55850221/132428842-1371505b-dbb4-4e51-87a6-c5b367f89a73.png)
 
 2-Compare minimum with the second element. If the second element is smaller than minimum, assign the second element as minimum.
@@ -143,7 +143,7 @@ Compare minimum with the third element. Again, if the third element is smaller, 
 ![image](https://user-images.githubusercontent.com/55850221/132429007-df076344-dde7-4137-9df9-cc5c0e2f241d.png)![image](https://user-images.githubusercontent.com/55850221/132429024-cf2d9b6e-5657-4e2c-9b29-99e3b5be7e84.png)
 ![image](https://user-images.githubusercontent.com/55850221/132429039-19520487-b7ca-4024-b503-a2e9cc97f42a.png)
 
-Selection Sort Complexity
+### Selection Sort Complexity
 Time Complexity	 
 Best	O(n2)
 Worst	O(n2)
@@ -162,7 +162,7 @@ Complexity = O(n2)
 
 Also, we can analyze the complexity by simply observing the number of loops. There are 2 loops so the complexity is n*n = n2.
 
-Time Complexities:
+### Time Complexities:
 
 Worst Case Complexity: O(n2)
 If we want to sort in ascending order and the array is in descending order then, the worst case occurs.
@@ -173,7 +173,7 @@ It occurs when the elements of the array are in jumbled order (neither ascending
 
 The time complexity of the selection sort is the same in all cases. At every step, you have to find the minimum element and put it in the right place. The minimum element is not known until the end of the array is not reached.
 
-Space Complexity:
+### Space Complexity:
 
 Space complexity is O(1) because an extra variable temp is used.
 
