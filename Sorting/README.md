@@ -66,3 +66,11 @@ Insertion sort works similarly as we sort cards in our hand in a card game.
 We assume that the first card is already sorted then, we select an unsorted card. If the unsorted card is greater than the card in hand, it is placed on the right otherwise, to the left. In the same way, other unsorted cards are taken and put in their right place.
 
 ![i1](https://user-images.githubusercontent.com/55850221/132428084-efb30169-02d8-4223-bd94-afe4e168270f.JPG)
+
+![i2](https://user-images.githubusercontent.com/55850221/132428277-7f39eaf4-1255-483d-b8e2-5d9f7e6d7aee.JPG)
+
+Now, the first two elements are sorted.
+
+Take the third element and compare it with the elements on the left of it. Placed it just behind the element smaller than it. If there is no element smaller than it, then place it at the beginning of the array.
+
+![image](https://user-images.githubusercontent.com/55850221/132428399-48cbf947-711b-4525-a26a-4b0b7a1d801d.png)
