@@ -129,6 +129,8 @@ there are only a few elements left to be sorted
 
 # 3-Selection Sort Algorithm
 ### Working of Selection Sort
+![image](https://user-images.githubusercontent.com/55850221/167964233-7de4d496-fc92-4712-8f21-68e18c7e737e.png)
+
 ![image](https://user-images.githubusercontent.com/55850221/132428842-1371505b-dbb4-4e51-87a6-c5b367f89a73.png)
 
 2-Compare minimum with the second element. If the second element is smaller than minimum, assign the second element as minimum.
